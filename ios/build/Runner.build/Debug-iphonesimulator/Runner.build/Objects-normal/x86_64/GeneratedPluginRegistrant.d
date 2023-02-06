@@ -1,0 +1,20 @@
+dependencies: \
+  /Users/rohitpakhrin/Projects/my_first_flutter_application/ios/Runner/GeneratedPluginRegistrant.m \
+  /Users/rohitpakhrin/Projects/my_first_flutter_application/ios/Runner/GeneratedPluginRegistrant.h \
+  /Users/rohitpakhrin/Projects/my_first_flutter_application/ios/build/Debug-iphonesimulator/Flutter.framework/Modules/module.modulemap \
+  /Users/rohitpakhrin/Projects/my_first_flutter_application/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterViewController.h \
+  /Users/rohitpakhrin/Projects/my_first_flutter_application/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterPluginAppLifeCycleDelegate.h \
+  /Users/rohitpakhrin/Projects/my_first_flutter_application/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterHeadlessDartRunner.h \
+  /Users/rohitpakhrin/Projects/my_first_flutter_application/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterEngineGroup.h \
+  /Users/rohitpakhrin/Projects/my_first_flutter_application/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterEngine.h \
+  /Users/rohitpakhrin/Projects/my_first_flutter_application/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterDartProject.h \
+  /Users/rohitpakhrin/Projects/my_first_flutter_application/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterCallbackCache.h \
+  /Users/rohitpakhrin/Projects/my_first_flutter_application/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterTexture.h \
+  /Users/rohitpakhrin/Projects/my_first_flutter_application/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterPlatformViews.h \
+  /Users/rohitpakhrin/Projects/my_first_flutter_application/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterCodecs.h \
+  /Users/rohitpakhrin/Projects/my_first_flutter_application/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterChannels.h \
+  /Users/rohitpakhrin/Projects/my_first_flutter_application/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterBinaryMessenger.h \
+  /Users/rohitpakhrin/Projects/my_first_flutter_application/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterPlugin.h \
+  /Users/rohitpakhrin/Projects/my_first_flutter_application/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterMacros.h \
+  /Users/rohitpakhrin/Projects/my_first_flutter_application/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterAppDelegate.h \
+  /Users/rohitpakhrin/Projects/my_first_flutter_application/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/Flutter.h

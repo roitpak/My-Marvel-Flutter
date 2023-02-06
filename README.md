@@ -1,3 +1,5 @@
+This app is developed for students in Texas Internation College Nepal.
+
 # my_first_flutter_application
 
 A new Flutter project.

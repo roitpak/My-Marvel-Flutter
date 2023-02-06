@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "e046bc092eca5a5f57b26c2c1a45089a23b58d2fd3c7e3f318aa5f7c4ab8823d"
+build_start_time: [1675615438, 686480998]
+build_end_time: [1675615441, 887284040]
+inputs:
+  "/Users/rohitpakhrin/Projects/my_first_flutter_application/ios/Runner/AppDelegate.swift": [1668016546, 0]
