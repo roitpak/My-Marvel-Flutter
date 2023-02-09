@@ -1,4 +1,6 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:my_first_flutter_application/auth.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -8,8 +10,49 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreen extends State<LoginScreen> {
-  var username = "";
+  var email = "";
   var password = "";
+  final User? user = Auth().currentUser;
+  Future<void> signOut() async {
+    await Auth().signOut();
+  }
+
+  Future<void> signInWithEmailAndPassword() async {
+    try {
+      await Auth().signInWithEmailAndPassword(
+        email: email,
+        password: password,
+      );
+    } on FirebaseAuthException catch (e) {
+      print(e.message);
+      // setState(() {
+      //   errorMessage = e.message;
+      // });
+    }
+  }
+
+  void checkLogin() async {
+    try {
+      await Auth().signInWithEmailAndPassword(
+        email: email,
+        password: password,
+      );
+    } on FirebaseAuthException catch (e) {
+      print(e.message);
+      // setState(() {
+      //   errorMessage = e.message;
+      // });
+    }
+    FirebaseAuth.instance.authStateChanges().listen((User? user) {
+      if (user == null) {
+        print('User is currently signed out!');
+      } else {
+        Navigator.pushNamed(context, '/dashboard');
+        print('User is signed in!');
+      }
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,17 +61,21 @@ class _LoginScreen extends State<LoginScreen> {
         ),
         body: Column(
           children: [
+            const Padding(
+              padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+              child: Image(image: AssetImage('assets/texas.png')),
+            ),
             Padding(
               padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
               child: TextField(
                 onChanged: (value) => {
                   setState(() {
-                    username = value;
+                    email = value;
                   })
                 },
                 decoration: const InputDecoration(
-                    labelText: "Username",
-                    hintText: "user123",
+                    labelText: "Email",
+                    hintText: "email@email.com",
                     border: OutlineInputBorder()),
               ),
             ),
@@ -49,7 +96,7 @@ class _LoginScreen extends State<LoginScreen> {
             ),
             ElevatedButton(
                 onPressed: () {
-                  print("Hello world" + username + password);
+                  checkLogin();
                 },
                 child: const Text("Login"))
           ],

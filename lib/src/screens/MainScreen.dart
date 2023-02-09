@@ -7,7 +7,7 @@ class MainScreen extends StatelessWidget {
   @override
   Widget build(context) {
     return MaterialApp(
-      title: "News!",
+      title: "My App!",
       initialRoute: '/',
       routes: {
         '/': (context) => const LoginScreen(),
