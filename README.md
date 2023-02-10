@@ -1,5 +1,10 @@
 This app is developed for students in Texas Internation College Nepal.
 
+To runt his app clone the project
+and run below command inside project directory
+flutter pub get 
+to install dependency 
+
 # my_first_flutter_application
 
 A new Flutter project.
