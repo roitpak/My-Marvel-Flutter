@@ -74,12 +74,30 @@ class _DashboardScreen extends State<Dashboard> {
               future: comics,
               builder: (context, snapshot) {
                 if (snapshot.hasData) {
-                  return Text("I HAVE DATA");
+                  return SizedBox(
+                    height: MediaQuery.of(context).size.height * 0.8,
+                    child: ListView.builder(
+                        padding: const EdgeInsets.all(8),
+                        itemCount: snapshot.data!.data!.results!.length,
+                        itemBuilder: (BuildContext context, int index) {
+                          var item = snapshot.data!.data!.results![index];
+                          return SizedBox(
+                            height: 50,
+                            child: Column(
+                              children: [
+                                Image.network(
+                                  "${item.thumbnail!.path}.${item.thumbnail!.extension}",
+                                  height: 30,
+                                ),
+                                Center(child: Text('Entry ${item.title}'))
+                              ],
+                            ),
+                          );
+                        }),
+                  );
                 } else if (snapshot.hasError) {
                   return Text('${snapshot.error}');
                 }
-
-                // By default, show a loading spinner.
                 return const CircularProgressIndicator();
               },
             )
