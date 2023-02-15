@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_first_flutter_application/src/screens/ComicsScreen.dart';
 import 'package:my_first_flutter_application/src/screens/Dashboard.dart';
 import 'package:my_first_flutter_application/src/screens/LoginScreen.dart';
 
@@ -12,6 +13,7 @@ class MainScreen extends StatelessWidget {
       routes: {
         '/': (context) => const LoginScreen(),
         '/dashboard': (context) => const Dashboard(),
+        '/comicsScreen': (context) => const ComicsScreen(),
       },
     );
   }
